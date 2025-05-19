@@ -119,7 +119,7 @@ int wincheck()
             printf("\nPlayer 2 Wins\n"); 
             return 10; 
         } 
-        if (j==0 && turn+1 % 2) 
+        if (j==0 && (turn+1) % 2) 
         { 
             printf("\nPlayer 1 Wins\n"); 
             return 10; 
@@ -190,7 +190,7 @@ int compturn()
                 for (j=0;j<WORDS;j++) 
                 { 
                     templenb=strlen(dict[j]); 
-                    if(templenb>len && templenb+1 % 2 && templenb<templena) 
+                    if(templenb>len && (templenb+1) % 2 && templenb<templena) 
                     { 
                         m=memcmp(tempword,dict[j],templenb); 
                         if (m==0) 
